@@ -339,7 +339,7 @@ class Coollection implements
      */
     public function kebabCase($string)
     {
-        return kebab_case($this->camelCase($string));
+        return Str::kebab($this->camelCase($string));
     }
 
     /**
@@ -350,7 +350,7 @@ class Coollection implements
      */
     public function camelCase($string)
     {
-        return camel_case($string);
+        return Str::camel($string);
     }
 
     /**
